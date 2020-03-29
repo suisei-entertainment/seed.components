@@ -20,6 +20,10 @@
         "testdir": "./src/utils/test/unittest",
         "verbosity": 2
     },
+    "linter":
+    {
+        "linterdir": "./src/utils/"
+    },
     "build":
     {
         "type": "multistage",
