@@ -22,7 +22,7 @@
     },
     "linter":
     {
-        "linterdir": "./src/utils/"
+        "linterdir": "./src/utils/suisei/seed/"
     },
     "build":
     {
