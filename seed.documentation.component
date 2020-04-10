@@ -1,0 +1,23 @@
+{
+    "id": "documentation",
+    "name": "Development Documentation",
+    "version":
+    {
+        "major": 0,
+        "minor": 1,
+        "patch": 0,
+        "build": 0,
+        "release": "internal",
+        "meta":
+        {
+            "codename": "Fujin"
+        }
+    },
+    "build":
+    {
+        "type": "sphinx",
+        "target": "html",
+        "sourcepath": "./doc/development/",
+        "targetpath": "./dist/doc/development/"
+    }
+}
