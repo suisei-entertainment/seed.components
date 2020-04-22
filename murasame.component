@@ -1,0 +1,44 @@
+{
+    "id": "murasame",
+    "name": "Murasame Application Development Framework",
+    "version":
+    {
+        "major": 0,
+        "minor": 1,
+        "patch": 0,
+        "build": 0,
+        "release": "internal",
+        "meta":
+        {
+            "codename": "Fujin"
+        }
+    },
+    "unittest":
+    {
+        "outdir": "~/.sde/logs/test/unittest/murasame/",
+        "logformat": "{method_name} - {short_description}",
+        "testdir": "./src/murasame/test/unittest",
+        "verbosity": 2
+    },
+    "linter":
+    {
+        "linterdir": "./src/murasame/murasame/"
+    },
+    "build":
+    {
+        "type": "multistage",
+        "targetpathbase": "suisei.seed.murasame-${MAJOR}.${MNOR}.{PATCH}",
+        "stages":
+        [
+            {
+                "stage": 1,
+                "type": "versionbumper",
+                "build": "+"
+            },
+            {
+                "stage": 2,
+                "type": "wheel"
+            }
+        ]
+    }
+}
