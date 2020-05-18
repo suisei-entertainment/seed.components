@@ -27,7 +27,7 @@
     "build":
     {
         "type": "multistage",
-        "targetpathbase": "suisei.seed.murasame-${MAJOR}.${MNOR}.{PATCH}",
+        "targetpathbase": "murasame-${MAJOR}.${MNOR}.{PATCH}",
         "stages":
         [
             {
@@ -38,6 +38,14 @@
             {
                 "stage": 2,
                 "type": "wheel"
+            },
+            {
+                "stage": 3,
+                "type": "uninstall"
+            },
+            {
+                "stage": 4,
+                "type": "localinstall"
             }
         ]
     }
